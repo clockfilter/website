@@ -1,6 +1,6 @@
 # Deploy clockfilter.com
 
-Static HTML and CSS, published from the root of the public `clockfilter/website` repository on `main`. No build step, JavaScript, tracking, or third-party requests are required. Homepage fonts are served locally from assets/fonts/. The pilot CTA opens an email enquiry to ryan@clockfilter.com.
+Static HTML and CSS, published from the root of the public `clockfilter/website` repository on `main`. No build step, JavaScript, tracking, or third-party requests are required. Homepage fonts are served locally from assets/fonts/. The pilot CTA opens an email enquiry to info@clockfilter.com.
 
 ## GitHub Pages
 
@@ -59,7 +59,7 @@ dig AAAA clockfilter.com +short
 dig CNAME www.clockfilter.com +short
 ```
 
-All three HTML responses must include `CLOCK FILTER, LLC`, contain no placeholder page, and require no sign-in. Contact must contain the visible `mailto:ryan@clockfilter.com` link. Confirm all five MX hosts remain present and exactly one apex SPF record still resolves through the existing `_spfm` host to `_spf.google.com`. Compare DKIM, DMARC, Google verification, and nameservers with the pre-change snapshot. Verify Enforce HTTPS is enabled.
+All three HTML responses must include `CLOCK FILTER, LLC`, contain no placeholder page, and require no sign-in. Contact must contain the visible `mailto:info@clockfilter.com` link. Confirm all five MX hosts remain present and exactly one apex SPF record still resolves through the existing `_spfm` host to `_spf.google.com`. Compare DKIM, DMARC, Google verification, and nameservers with the pre-change snapshot. Verify Enforce HTTPS is enabled.
 
 ## Local preview
 
