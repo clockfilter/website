@@ -1,0 +1,35 @@
+* { box-sizing: border-box; }
+html { scroll-behavior: smooth; scroll-padding-top: 24px; }
+.page { width: 100% !important; height: auto !important; }
+.page > section { height: auto !important; padding: 88px max(24px, calc((100vw - 1200px) / 2)) !important; }
+.page > header { padding: 20px max(24px, calc((100vw - 1200px) / 2)) !important; height: auto !important; min-height: 96px; gap: 24px; }
+.page > footer { padding: 48px max(24px, calc((100vw - 1200px) / 2)) !important; gap: 32px; }
+#cta { margin: 0 max(24px, calc((100vw - 1200px) / 2)) 88px !important; padding: 64px !important; }
+#problem > div:nth-child(2) > div { height: auto !important; min-height: 180px; }
+#problem > span { width: auto !important; height: auto !important; }
+a:focus-visible { outline: 3px solid #9A4F14; outline-offset: 5px; }
+@media (max-width: 1100px) {
+ .page > header { flex-wrap: wrap; }
+ nav { flex-wrap: wrap; gap: 20px !important; }
+ #problem > div:first-child, #about, #how > div:nth-child(3), #cta { flex-direction: column !important; gap: 32px !important; }
+ #problem h2, #about h2, #how > div:nth-child(3) h3 { flex: auto !important; }
+ #problem > div:nth-child(2), #how > div:nth-child(2) { grid-template-columns: 1fr !important; }
+ #problem > div:nth-child(2) > div { min-height: 0; }
+}
+@media (max-width: 640px) {
+ .page > section { padding: 56px 24px !important; gap: 32px !important; }
+ .page > header { padding: 24px !important; }
+ nav { font-size: 14px !important; gap: 16px !important; }
+ h1 { font-size: 46px !important; }
+ h2 { font-size: 36px !important; }
+ h3 { font-size: 25px !important; }
+ #top > div:first-child { gap: 24px !important; }
+ #top > div:first-child > div:nth-child(4) { flex-wrap: wrap; }
+ #top > div:nth-child(2) { padding: 24px !important; overflow-x: auto; }
+ #top > div:nth-child(2) > div { min-width: 590px; }
+ #fair > div:nth-child(2) { grid-template-columns: 1fr !important; }
+ #how > div:nth-child(3) { padding: 32px !important; }
+ #cta { margin: 0 24px 56px !important; padding: 32px !important; align-items: flex-start !important; }
+ footer, footer > div:last-child { flex-direction: column !important; gap: 24px !important; }
+}
+@media (prefers-reduced-motion: reduce) { html { scroll-behavior: auto; } }

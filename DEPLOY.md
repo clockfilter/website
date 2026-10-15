@@ -1,6 +1,6 @@
 # Deploy clockfilter.com
 
-Static HTML and CSS, published from the root of the public `clockfilter/website` repository on `main`. No build step, JavaScript, tracking, or third-party assets are required.
+Static HTML and CSS, published from the root of the public `clockfilter/website` repository on `main`. No build step, JavaScript, tracking, or third-party requests are required. Homepage fonts are served locally from assets/fonts/. The pilot CTA opens an email enquiry to ryan@clockfilter.com.
 
 ## GitHub Pages
 
@@ -29,7 +29,7 @@ Add the following records, using GoDaddy’s default TTL:
 | AAAA | @ | 2606:50c0:8003::153 |
 | CNAME | www | clockfilter.github.io |
 
-These addresses were confirmed on 2026-09-28 against [GitHub’s custom domain documentation](https://docs.github.com/en/pages/configuring-a-custom-domain-for-your-github-pages-site/managing-a-custom-domain-for-your-github-pages-site). DNS propagation and certificate issuance may take up to 24 hours. GitHub redirects the configured www variant to the apex domain.
+These addresses were confirmed on 2026-10-15 against [GitHub’s custom domain documentation](https://docs.github.com/en/pages/configuring-a-custom-domain-for-your-github-pages-site/managing-a-custom-domain-for-your-github-pages-site). DNS propagation and certificate issuance may take up to 24 hours. GitHub redirects the configured www variant to the apex domain.
 
 ### Preserve all email and verification records
 
